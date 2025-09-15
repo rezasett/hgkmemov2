@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="Home.html">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- Main Content -->
+<head class="contentCPDdetail">
+ <link rel="stylesheet" href="CPDdetail.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prospect Dashboard</title>
+  <link rel="stylesheet" href="prospect-dashboard.css" />
+</head>
+<body>
+  <main class="main">
+    <!-- Header -->
+    <header class="toolbar">
+      <h1 class="title">PROSPECT DASHBOARD</h1>
+
+      <div class="toolbar-right">
+        <div class="status-note">Status</div>
+
+        <!-- Dropdown Action -->
+        <details class="dropdown">
+          <summary class="btn-action">Action<span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+    <!-- Layout: content + right rail -->
+    <div class="grid">
+      <!-- ===== Left/Main column ===== -->
+      <section class="paper">
+        <!-- Identitas Perusahaan -->
+        <h3 class="section-title">Company ID</h3>
+        <div class="table-like">
+          <div class="row"><div class="label">Company name</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Established year</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Ownership status</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Industry sector</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Accounting standard</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Assignment period</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Engagement services</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Address</div><div class="cell"></div></div>
+          <div class="row"><div class="label">City</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Province</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Postal code</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Telephone Number</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Email</div><div class="cell"></div></div>
+        </div>
+
+        <!-- Data Perikatan -->
+        <h3 class="section-title">ENGAGEMENT DATA</h3>
+        <div class="table-like small">
+          <div class="row">
+            <div class="label">Engagement Type</div>
+            <div class="cell">
+              <select class="select">
+                <option value="">Dropdown</option>
+                <option>Recurring</option><option>New</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">Audit standard</div>
+            <div class="cell">
+              <select class="select">
+                <option value="">Dropdown</option>
+                <option>SA</option><option>SPAP</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="label">Financing status</div>
+            <div class="cell">
+              <select class="select">
+                <option value="">Dropdown</option>
+                <option>Self-funded</option><option>Bank</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kontak Person -->
+        <h3 class="section-title">CONTACT PERSON</h3>
+        <div class="table-like">
+          <div class="row"><div class="label">Name</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Telephone Number</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Email</div><div class="cell"></div></div>
+        </div>
+
+        <!-- Data Keuangan -->
+        <h3 class="section-title">FINANCIAL DATA </h3>
+        <div class="table-like">
+          <div class="row"><div class="label">Total current assets</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Total non current assets</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Total short term liabilities</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Total long term liabilities</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Total Equity</div><div class="cell"></div></div>
+          <div class="row"><div class="label">Total revenues</div><div class="cell"></div></div>
+          <div class="row"><div class="label">EBT</div><div class="cell"></div></div>
+        </div>
+      </section>
+
+      <!-- ===== Right rail ===== -->
+      <aside class="rail">
+        <div class="risk-card">
+          <div class="risk-title">Risk Indication</div>
+          <div class="risk-level">
+            <span class="high">High</span>
+            <span class="slash">/</span>
+            <span class="low">Low</span>
+          </div>
+        </div>
+
+        <div class="rail-actions">
+          <a class="rail-btn" href="CPDqf.html">Questionare Form</a>
+          <a class="rail-btn" href="CPDpp.html">Plotting Personil</a>
+          <a class="rail-btn" href="CPDca.html">Cost Allocation</a>
+        </div>
+
+        <div class="doc-box">
+          <svg viewBox="0 0 24 24" width="64" height="64" aria-hidden="true">
+            <path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm1 7V3.5L19.5 9H15zM8 12h8v1H8v-1zm0 3h8v1H8v-1zm0 3h6v1H8v-1z"/>
+          </svg>
+          <div class="doc-caption">Laporan Keuangan. Pdf</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

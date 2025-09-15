@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="#">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- Main Content -->
+ <link rel="stylesheet" href="CPDca.css" />
+
+  <header class="head-wrap">
+      <h1 class="title">Client Name</h1>
+      <div class="head-actions">
+        <a class="back" href="CPDdetail.html">Back</a>
+        <span class="status">Status</span>
+
+        <details class="action">
+          <summary class="btn-action">Action <span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+  <!-- Main Content -->
+    <main class="container">
+    <h2 class="section-title">Operational</h2>
+
+    <!-- Operational Table -->
+    <div class="card">
+      <div class="body">
+        <table class="grid operational" aria-label="Operational cost planning table">
+          <thead>
+            <tr>
+              <th class="col-no">No</th>
+              <th>Personnel Name</th>
+              <th>Area</th>
+              <th class="col-q">Qty</th>
+              <th>Hotel Rate</th>
+              <th>Total Accommodation</th>
+              <th class="col-q">Qty</th>
+              <th>Transport Rate</th>
+              <th>Total Transport</th>
+              <th class="col-q">Qty</th>
+              <th>Local Transport</th>
+              <th>Per Diem Rate</th>
+              <th>Total Per Diem</th>
+              <th>Other Costs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example Row -->
+            <tr>
+              <td contenteditable="true">1</td>
+              <td contenteditable="true">auto-filled</td>
+              <td>
+                <select>
+                  <option value="">--Select--</option>
+                  <option>WIB</option>
+                  <option>WITA</option>
+                  <option>WIT</option>
+                  <option>South Jakarta</option>
+                  <option>East Jakarta</option>
+                  <option>West Jakarta</option>
+                  <option>North Jakarta</option>
+                  <option>Outside Jakarta</option>
+                </select>
+              </td>
+              <td contenteditable="true"></td>
+              <td class="readonly">Lookup DB</td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+              <td class="readonly">Lookup DB</td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+              <td class="readonly"></td>
+              <td class="readonly">Lookup DB</td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+            </tr>
+
+            <!-- Empty Rows -->
+            <tr>
+              <td contenteditable="true">2</td>
+              <td contenteditable="true"></td>
+              <td>
+                <select>
+                  <option value="">--Select--</option>
+                  <option>WIB</option>
+                  <option>WITA</option>
+                  <option>WIT</option>
+                  <option>South Jakarta</option>
+                  <option>East Jakarta</option>
+                  <option>West Jakarta</option>
+                  <option>North Jakarta</option>
+                  <option>Outside Jakarta</option>
+                </select>
+              </td>
+              <td contenteditable="true"></td>
+              <td class="readonly"></td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+              <td class="readonly"></td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+              <td class="readonly"></td>
+              <td class="readonly"></td>
+              <td class="readonly"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <!-- Tambahkan baris sesuai kebutuhan -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Total & Button -->
+    <div class="totals">
+      <label class="label">Total Operational Cost</label>
+      <input type="text" class="input" placeholder="" />
+    </div>
+
+    </main>
+<script>
+  // Simple action dropdown
+  const box = document.getElementById('actionBox');
+  const btn = document.getElementById('actionBtn');
+  btn.addEventListener('click', (e)=>{ e.stopPropagation(); box.classList.toggle('open'); });
+  document.addEventListener('click', ()=> box.classList.remove('open'));
+</script>
+</body>
+
+</html>

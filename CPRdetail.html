@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="Home.html">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- main content -->
+ <link rel="stylesheet" href="CPRdetail.css" />
+   <header class="head-wrap">
+      <h1 class="title">Client Name</h1>
+      <div class="head-actions">
+        <a class="back" href="CPDdashboard.html">Back</a>
+        <span class="status">Status</span>
+
+        <details class="action">
+          <summary class="btn-action">Action <span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Accept</a></li>
+            <li><a href="#">Reject</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Pricing Form -->
+    <section class="card">
+      <div class="body">
+
+        <!-- 3-column grid: label | input | right-remark/dropdown -->
+        <div class="form-grid">
+          <!-- Client Risk -->
+          <label class="lbl" for="risk">Client Risk</label>
+          <input id="risk" class="inp readonly auto" value="autofilled" readonly />
+          <div></div>
+
+          <!-- Personnel Cost -->
+          <label class="lbl" for="p-cost">Personnel Cost</label>
+          <input id="p-cost" class="inp readonly auto" value="autofilled" readonly />
+          <div></div>
+
+          <!-- Operational Cost + dropdown Inc/Excl -->
+          <label class="lbl" for="o-cost">Operational Cost</label>
+          <input id="o-cost" class="inp readonly auto" value="autofilled" readonly />
+          <div class="side">
+            <label class="side-lbl">Option</label>
+            <select class="sel">
+              <option>Inc.</option>
+              <option>Excl.</option>
+            </select>
+          </div>
+
+          <!-- Basic Price -->
+          <div class="hr-row">Basic Price</div>
+          <input class="inp readonly" value="formula" readonly />
+          <div></div>
+
+          <!-- Margin (with %) -->
+          <label class="lbl" for="margin">Margin</label>
+          <div class="percent">
+            <input id="margin" class="inp" placeholder="" />
+            <span class="pct">%</span>
+          </div>
+          <div></div>
+
+          <!-- PPN + dropdown Inc/Excl -->
+          <label class="lbl" for="ppn">VAT (PPN)</label>
+          <input id="ppn" class="inp readonly" value="formula" readonly />
+          <div class="side">
+            <label class="side-lbl">Option</label>
+            <select class="sel">
+              <option>Inc.</option>
+              <option>Excl.</option>
+            </select>
+          </div>
+
+          <!-- PPh -->
+          <label class="lbl" for="pph">Withholding Tax (PPh)</label>
+          <input id="pph" class="inp readonly" value="formula" readonly />
+          <div></div>
+
+          <!-- Audit Fee -->
+          <div class="hr-row">Audit Fee</div>
+          <input class="inp readonly" value="formula" readonly />
+          <div></div>
+
+          <!-- HPS -->
+          <label class="lbl" for="hps">HPS</label>
+          <input id="hps" class="inp hint" value="Fill (non mandatory)" />
+          <div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Negotiation Log -->
+    <section class="card">
+      <h3 class="section-title">Negotiation Log</h3>
+      <div class="body">
+        <div class="table-wrap">
+          <table class="grid" aria-label="Negotiation log">
+            <thead>
+              <tr>
+                <th class="col-date">Date</th>
+                <th class="col-time">Time</th>
+                <th>Client PIC</th>
+                <th>Audit PIC</th>
+                <th class="col-fee">Negotiation Fee</th>
+                <th class="col-status">Status</th>
+                <th class="col-media">Nego. Media</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Editable cells -->
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner's Note -->
+    <section class="card">
+      <h3 class="section-title">Partner’s Note</h3>
+      <div class="body">
+        <textarea class="note" rows="8" placeholder=""></textarea>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

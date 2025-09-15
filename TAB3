@@ -1,0 +1,62 @@
+/* code html */
+      <div class="back-right">
+        <div><a class="back-btn" href="CPDdetail.html"> Back</a></div>
+      
+      <div class="toolbar-right">
+        <div class="status-note">Status</div>
+
+      <!-- Dropdown Action -->
+        <details class="dropdown">
+          <summary class="btn-action">Action<span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+        
+    </div>
+
+/* back button css */
+
+.dropdown{ position:relative; }
+.btn-action{
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+  display:inline-flex; align-items:center; gap:6px;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#111827; color:#fff;
+  border:1px solid rgba(0,0,0,.7);
+}
+.btn-action::-webkit-details-marker{ display:none; }
+.dropdown:not([open]) .menu{ display:none; }
+.menu{
+  position:absolute; right:0; top:110%;
+  min-width:170px; margin:6px 0 0; padding:8px 0;
+  list-style:none;
+  background:#fff; border:1px solid var(--line-soft); border-radius:12px;
+  box-shadow:0 16px 32px rgba(15,23,42,.15); z-index:10;
+}
+.menu li a{
+  display:block; padding:8px 12px; text-decoration:none; color:var(--ink); font-size:14px;
+}
+.menu li a:hover{ background:#eef2ff; color:#1e3a8a; }
+.chev{ font-size:12px }
+
+.toolbar-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.back-right{
+  display:flex;
+  align-items:center;
+  gap:36px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="Home.html">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+
+<link rel="stylesheet" href="audashdetail.css" />
+<body>
+   <main class="content">
+    <!-- BAR ATAS: Judul kiri, Status + Action dropdown kanan -->
+    <header class="toolbar">
+      <div class="left">
+        <h2 class="page-title">Auditor Dashboard Detail</h2>
+        <div class="client">PT Nama Klien</div>
+      </div>
+
+      <div class="right">
+        <span class="status-badge" title="Status pekerjaan saat ini">Status</span>
+
+        <!-- Dropdown Action tanpa JS -->
+        <details class="dropdown">
+          <summary class="btn-action" aria-haspopup="menu">
+            Action
+            <svg class="chev" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 8l4 4 4-4" fill="currentColor"></path>
+            </svg>
+          </summary>
+          <ul class="menu" role="menu" aria-label="Action menu">
+            <li role="menuitem"><a href="#">Save</a></li>
+            <li role="menuitem"><a href="#">Validate</a></li>
+            <li role="menuitem"><a href="#">Approve</a></li>
+            <li role="menuitem"><a href="#">Closed</a></li>
+            <li role="menuitem"><a href="#">QC Pass</a></li>
+            <li role="menuitem"><a href="#">Revised</a></li>
+            <li role="menuitem"><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+    <!-- TABEL -->
+    <section class="sheet">
+      <div class="table-wrap">
+        <table class="data-table" aria-label="HGK Memo Activity Matrix">
+          <thead>
+            <tr>
+              <th rowspan="2" class="w-60">No</th>
+              <th rowspan="2" >Aktivitas</th>
+              <th colspan="4">Action</th>
+              <th colspan="4">Status</th>
+            </tr>
+            <tr>
+              <th>Preparer</th>
+              <th>Reviewer</th>
+              <th>Finisher</th>
+              <th>EQCR</th>
+              <th>Preparer</th>
+              <th>Reviewer</th>
+              <th>Finisher</th>
+              <th>EQCR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Baris contoh; duplikasi sesuai kebutuhan -->
+            <tr>
+              <td>1</td>
+              <td>Engagement Letter</td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Letter of Assignment</td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Statement of Independence</td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td><a class="link" href="#">View</a></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+
+            <!-- Tambahkan baris lain sesuai gambar Anda -->
+            <tr><td>4</td><td>Materiality</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>5</td><td>Inherent Risk</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>6</td><td>Control Risk</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>7</td><td>RoMM</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>8</td><td>Analytical Procedures</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>9</td><td>Audit Strategy Memorandum</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>10</td><td>Lead & Sub Lead</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>11</td><td>Subsequent Event</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>12</td><td>Related Party Transaction</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>13</td><td>Accounting Estimate</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>14</td><td>Management Expert</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>15</td><td>Auditor's Expert</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>16</td><td>List Adjustment</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>17</td><td>TB Audited</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>18</td><td>Representation Letter</td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td><a class="link" href="#">View</a></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+
+
+</html>

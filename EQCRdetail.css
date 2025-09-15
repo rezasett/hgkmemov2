@@ -1,0 +1,107 @@
+:root{
+  --sidebar-w: 260px;               /* ubah jika sidebar Anda berbeda */
+  --bg: #f7f9fc;
+  --panel: #ffffff;
+  --ink: #0f172a;
+  --muted: #667085;
+  --line: rgba(15,23,42,.15);
+  --line-soft: rgba(15,23,42,.10);
+  --shadow: 0 8px 20px rgba(15,23,42,.06);
+
+  --thead: #6b6b6b;                 /* header tabel abu sama seperti halaman lain */
+  --thead-ink: #fff;
+
+  --grey-cell: #e5e7eb;             /* abu untuk kolom indikator */
+}
+
+/* ===== Layout dasar ===== */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.main{margin-left:var(--sidebar-w);min-height:100vh}
+
+/* ===== Heading ala gambar-2 ===== */
+.topbar{
+  background:#f6f8fb;
+  border-bottom:1px solid var(--line-soft);
+  padding:22px 32px 18px;
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items:center;
+  gap:16px;
+}
+.page-title{
+  margin:0;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 500;
+  letter-spacing:.01em;
+  color:#0b1220;
+}
+.topbar-right{display:flex;align-items:center;gap:18px}
+.topbar-right .back{color:#4f46e5;text-decoration:underline;text-underline-offset:3px;font-size:14px}
+.topbar-right .status{color:#1f2937;font-size:14px}
+
+/* Dropdown Action (tanpa JS) */
+.action{position:relative}
+.btn-action{
+  list-style:none; cursor:pointer; user-select:none;
+  padding:10px 14px; border-radius:12px;
+  background:#0f172a; color:#fff; border:1px solid rgba(0,0,0,.5);
+  display:inline-flex; align-items:center; gap:6px;
+}
+.btn-action::-webkit-details-marker{ display:none; }
+.dropdown:not([open]) .menu{ display:none; }
+.menu{
+  position:absolute; right:0; top:110%;
+  min-width:170px; margin:6px 0 0; padding:8px 0;
+  list-style:none;
+  background:#fff; border:1px solid var(--line-soft); border-radius:12px;
+  box-shadow:0 16px 32px rgba(15,23,42,.15); z-index:10;
+}
+.menu li a{
+  display:block; padding:8px 12px; text-decoration:none; color:var(--ink); font-size:14px;
+}
+.menu li a:hover{ background:#eef2ff; color:#1e3a8a; }
+.chev{ font-size:12px }
+
+/* ===== Sheet & table ===== */
+.sheet{padding:22px 32px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);box-shadow:var(--shadow)}
+.data-table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:14px}
+.col-no{width:60px}
+.col-komp{width:auto}
+.col-indikator{width:120px}
+.col-narrow{width:120px}
+.col-notes{width:720px}
+
+.data-table thead th{
+  position:sticky;top:0;z-index:1;
+  background:var(--thead);color:var(--thead-ink);
+  text-align:center;font-weight:700;padding:10px 12px;border:1px solid var(--line)
+}
+.data-table td{
+  border:1px solid var(--line);
+  padding:8px 10px;height:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff
+}
+/* biarkan teks 'Component' bisa wrap jika panjang */
+.data-table td:nth-child(2){white-space:normal;overflow:visible}
+
+/* ==== Kolom Indikator berwarna grey ==== */
+.data-table td.grey{background:var(--grey-cell);}
+
+/* ===== Result box ===== */
+.result-box{
+  margin:18px auto 0; max-width:520px;
+  border:1px solid #222; border-radius:6px;
+  background:#fff; text-align:center; padding:16px 14px;
+}
+.result-title{font-size:13px;color:#374151;margin-bottom:6px}
+.result-grade{font-size:28px;font-weight:800;letter-spacing:.02em;margin-bottom:6px}
+.result-note{font-size:12px;color:#6b7280}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px){
+  .main{margin-left:0}
+  .topbar{padding:18px 16px}
+  .sheet{padding:16px}
+  .data-table{font-size:13px}
+}

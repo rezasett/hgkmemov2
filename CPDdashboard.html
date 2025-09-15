@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="Home.html">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- main content -->
+ <link rel="stylesheet" href="CPDdashboard.css" />
+  <main class="content">
+    <h1 class="page-heading">CLIENT PROSPECT DATA</h1>
+
+    <section class="sheet">
+      <div class="table-wrap">
+        <table class="data-table" aria-label="Client Prospect Data">
+          <!-- Lebar kolom proporsional -->
+          <colgroup>
+            <col class="col-no" />
+            <col class="col-client" />
+            <col class="col-medium" />
+            <col class="col-medium" />
+            <col class="col-status" />
+            <col class="col-action" />
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Client Name</th>
+              <th>Manager Incharge</th>
+              <th>Partner Incharge</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+         <tbody>
+            <tr>
+                <td>1</td>
+                <td>PT Nama Klien</td>
+                <!-- Dropdown Team PIC -->
+                <td>
+                <select class="dropdown-input">
+                    <option value="">-- Choose Manager --</option>
+                    <option>Arif Wijaksono</option>
+                    <option>Wulan Daryoco</option>
+                    <option>Sandy Herdiansyah</option>
+                </select>
+                </td>
+                <!-- Dropdown Audit Partner -->
+                <td>
+                <select class="dropdown-input">
+                    <option value="">-- Choose Partner --</option>
+                    <option>Hertanto</option>
+                    <option>Bambang Karunawan</option>
+                    <option>Aryo Wibisono</option>
+                </select>
+                </td>
+                <td></td>
+                <td class="actions">
+                <a class="btn btn-edit" href="#">Edit/Save</a>
+                <a class="btn btn-view" href="CPDdetail.html">View</a>
+                </td>
+            </tr>
+
+            <!-- Baris kosong (duplikasi sesuai kebutuhan) -->
+            <tr><td>2</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>4</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>5</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>6</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>7</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>8</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>9</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>10</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>11</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>12</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>13</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>14</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+            <tr><td>15</td><td></td><td></td><td></td><td></td><td class="actions"><a class="btn btn-edit" href="#">Edit/Save</a><a class="btn btn-view" href="CPDdetail.html">View</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

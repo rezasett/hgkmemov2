@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="Home.html">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- Main Content -->
+ <link rel="stylesheet" href="CPDqf.css" />
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Profile</title>
+  <link rel="stylesheet" href="client-profile.css" />
+</head>
+<body>
+  <!-- Main content column (kept clear of the fixed sidebar via CSS) -->
+  <main class="main">
+    <!-- Page header -->
+    <header class="page-head">
+      <h1 class="client-name">Client Name</h1>
+
+      <div class="back-right">
+        <div><a class="back-btn" href="CPDdetail.html"> Back</a></div>
+      
+      <div class="toolbar-right">
+        <div class="status-note">Status</div>
+
+
+      <!-- Dropdown Action -->
+        <details class="dropdown">
+          <summary class="btn-action">Action<span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+        
+    </div>
+    </header>
+
+    <!-- ========== ASSESSMENT BLOCKS ========== -->
+    <section class="assess">
+      <!-- Prior Financial Reporting Issues -->
+      <div class="assess-card">
+        
+        <div class="assess-grid">
+          <div class="assess-title">Previous Financial Reporting Issues</div>
+          <div class="ag-head">High/Low</div>
+          <div class="ag-head">Notes</div>
+
+          <div class="ag-row-label">Going concern uncertainty exists</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                      </div><div class="ag-row"></div>
+          <div class="ag-row-label">Restructuring occurred</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                      </div><div class="ag-row"></div>
+          <div class="ag-row-label">Continuity of operations at risk</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+          <div class="ag-row-label">Prior period restatement (re-statement)</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+          <div class="ag-row-label">Other than unqualified audit opinion previously</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+
+          </div><div class="ag-row"></div>
+        </div>
+      </div>
+
+      <!-- Management Integrity -->
+      <div class="assess-card">
+        <div class="assess-grid">
+          <div class="assess-title">Management Integrity</div>
+          <div class="ag-head">High/Low</div>
+          <div class="ag-head">Notes</div>
+
+          <div class="ag-row-label">Governance issues in management/business</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                      </div><div class="ag-row"></div>
+          <div class="ag-row-label">Unusual activities in business operations</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                      </div><div class="ag-row"></div>
+          <div class="ag-row-label">Aggressive interpretation of standards / environment</div><div class="ag-row">
+            <select class="select">
+                <option value=""></option>
+                <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+          <div class="ag-row-label">Litigation risk with potential financial impact</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+          <div class="ag-row-label">Indication of earnings pressure</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+                    <div class="ag-row-label">Indication of prohibited related-party transactions</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+                    <div class="ag-row-label">Reputation risk from third parties/relationships</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+                    <div class="ag-row-label">Indication of unfair auditor replacement</div><div class="ag-row">
+            <select class="select">
+                 <option value=""></option>
+                 <option>Yes</option><option>No</option>
+              </select>
+                    </div><div class="ag-row"></div>
+      </div>
+    </section>
+
+    <!-- ========== TABLES ========== -->
+    <!-- Shareholder Structure -->
+    <section class="table-block">
+      <h3 class="table-title">Shareholder Structure</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <colgroup>
+            <col class="col-no"><col class="col-name-wide">
+            <col class="col-narrow"><col class="col-narrow">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Shareholder Name</th>
+              <th>%</th>
+              <th>Listed Company (Y/N)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- BOD & BOC Structure -->
+    <section class="table-block">
+      <h3 class="table-title">BOD &amp; BOC Structure</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <colgroup>
+            <col class="col-no"><col class="col-name-wide">
+            <col class="col-med"><col class="col-med"><col class="col-med">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Start Period</th>
+              <th>End Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Audit Committee Structure -->
+    <section class="table-block">
+      <h3 class="table-title">Audit Committee Structure</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <colgroup>
+            <col class="col-no"><col class="col-name-wide">
+            <col class="col-med"><col class="col-med"><col class="col-med">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Start Period</th>
+              <th>End Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* ========= Smooth Theme ========= */
+:root{
+  /* Layout */
+  --sidebar-w: 260px;                  /* ubah jika lebar sidebar berbeda */
+
+  /* Palette (lembut & netral) */
+  --bg       : #f7f9fc;
+  --panel    : #ffffff;
+  --ink      : #0f172a;
+  --muted    : #667085;
+
+  /* Lines & shadow */
+  --line     : rgba(15, 23, 42, .12);
+  --line-soft: rgba(15, 23, 42, .08);
+  --shadow   : 0 10px 24px rgba(15, 23, 42, .06);
+
+  /* Table header (abu lembut dengan gradasi) */
+  --head-from: #707b86;
+  --head-to  : #616c77;
+  --head-ink : #ffffff;
+
+  /* Accent */
+  --brand    : #3b82f6;
+}
+
+*{ box-sizing: border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========= Main Column (offset dari sidebar) ========= */
+.main{
+  margin-left: var(--sidebar-w);
+  padding: 28px 32px 44px;
+  min-height: 100vh;
+}
+
+/* ========= Page Header ========= */
+.page-head{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+.client-name{
+  margin: 0;
+  font-size: clamp(30px, 4.2vw, 56px);
+  font-weight: 500;
+  letter-spacing: .01em;
+  color: #0b1220;
+}
+.head-right{
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+}
+.tiny{
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+
+/* ========= Assessment Cards (blok abu lembut) ========= */
+.assess{ display:grid; gap: 14px; margin-top: 30px; }
+.assess-card{
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 14px 14px 16px;
+}
+.assess-title{
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #1f2937;
+}
+
+/* Grid: label kiri + kolom High/Low & Notes dengan tampilan sheet abu */
+.assess-grid{
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr;  /* label | High/Low | Notes */
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f1f4f8;
+}
+.ag-head{
+  grid-column: 2 / span 1;
+  padding: 8px 10px;
+  text-align: center;
+  font-weight: 700;
+  color: #111827;
+  background: linear-gradient(0deg, #e3e7ee, #f0f3f8);
+  border-left: 1px solid var(--line);
+}
+.ag-head + .ag-head{
+  grid-column: 3 / span 1;
+  border-left: 1px solid var(--line);
+}
+.ag-row-label,
+.ag-row{
+  padding: 8px 10px;
+  border-top: 1px solid var(--line);
+  background: #eef2f7;
+}
+.ag-row-label{ grid-column: 1 / span 1; color:#111827; }
+.ag-row{
+  grid-column: span 1;
+  border-left: 1px solid var(--line);
+  background: #ffffff;
+}
+
+/* ========= Tables (smooth) ========= */
+.table-block{ margin-top: 20px; }
+.table-title{
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  color: #1f2937;
+}
+.table-wrap{
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+/* Scrollbar tipis */
+.table-wrap::-webkit-scrollbar{ height:10px; width:10px; }
+.table-wrap::-webkit-scrollbar-thumb{ background: rgba(100,116,139,.35); border-radius: 999px; }
+.table-wrap:hover::-webkit-scrollbar-thumb{ background: rgba(100,116,139,.55); }
+
+.data-table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+/* Lebar kolom */
+.col-no{ width: 56px; }
+.col-name-wide{ width: auto; }
+.col-med{ width: 180px; }
+.col-narrow{ width: 150px; }
+
+/* Header lebih smooth: gradient lembut + teks putih */
+.data-table thead th{
+  position: sticky; top: 0; z-index: 1;
+  background: linear-gradient(180deg, var(--head-from), var(--head-to));
+  color: var(--head-ink);
+  text-align: center;
+  font-weight: 700;
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.08);
+}
+
+/* Sel dengan border halus & zebra lembut */
+.data-table th,
+.data-table td{
+  padding: 9px 10px;
+  border-right: 1px solid var(--line-soft);
+  border-top: 1px solid var(--line-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #ffffff;
+}
+.data-table th:last-child,
+.data-table td:last-child{ border-right: 0; }
+
+/* Kolom nama bisa membungkus agar tidak terpotong */
+.data-table td:nth-child(2){
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* Zebra & hover halus */
+.data-table tbody tr:nth-child(odd) td{ background: #fafbfc; }
+.data-table tbody tr:hover td{
+  background: #eef6ff;
+  box-shadow: inset 0 0 0 9999px rgba(59,130,246,.05);
+  transition: background-color .25s ease, box-shadow .25s ease;
+}
+
+/* ========= Responsive ========= */
+@media (max-width: 960px){
+  .main{ margin-left: 0; padding: 18px; }
+  .data-table{ font-size: 13px; }
+  .btn-back{ padding: 7px 12px; border-radius: 8px; }
+}
+
+.select{
+  width:100%;
+  padding:6px 8px;
+  font-size:13px;
+  border:1px solid var(--line);
+  border-radius:4px;
+  background:#fff;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 8l4 4 4-4' fill='black'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 8px center;
+  background-size:14px;
+  text-align: center;
+}
+
+/* menu button */
+
+.dropdown{ position:relative; }
+.btn-action{
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+  display:inline-flex; align-items:center; gap:6px;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#111827; color:#fff;
+  border:1px solid rgba(0,0,0,.7);
+}
+.btn-action::-webkit-details-marker{ display:none; }
+.dropdown:not([open]) .menu{ display:none; }
+.menu{
+  position:absolute; right:0; top:110%;
+  min-width:170px; margin:6px 0 0; padding:8px 0;
+  list-style:none;
+  background:#fff; border:1px solid var(--line-soft); border-radius:12px;
+  box-shadow:0 16px 32px rgba(15,23,42,.15); z-index:10;
+}
+.menu li a{
+  display:block; padding:8px 12px; text-decoration:none; color:var(--ink); font-size:14px;
+}
+.menu li a:hover{ background:#eef2ff; color:#1e3a8a; }
+.chev{ font-size:12px }
+
+.toolbar-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.back-right{
+  display:flex;
+  align-items:center;
+  gap:36px;
+}

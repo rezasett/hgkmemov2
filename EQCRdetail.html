@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="#">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+  <!-- main content -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Risk Score</title>
+  <link rel="stylesheet" href="EQCRdetail.css" />
+</head>
+<body>
+  <main class="main">
+    <!-- ===== Top heading seperti gambar 2 ===== -->
+    <header class="topbar">
+      <h1 class="page-title">Client Name</h1>
+      <div class="topbar-right">
+        <a class="back" href="CPDpp.html">Back</a>
+        <span class="status">Status</span>
+
+        <details class="action">
+          <summary class="btn-action">Action <span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+      </div>
+    </header>
+
+    <!-- ===== Tabel utama ===== -->
+    <section class="sheet">
+      <div class="table-wrap">
+        <table class="data-table" aria-label="Risk Indicator Table">
+          <colgroup>
+            <col class="col-no" />
+            <col class="col-komp" />
+            <col class="col-indikator" />
+            <col class="col-narrow" />
+            <col class="col-narrow" />
+            <col class="col-notes" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Component</th>
+              <th>Indicator</th>
+              <th>Score</th>
+              <th>Int. Score</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Public Entity</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Banking / NBFI / SOE Industry</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Litigation risk exists</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Going concern issue</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>First-year engagement</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Prior audit opinion issue</td>
+              <td class="grey"></td>
+              <td></td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== Hasil Skor ===== -->
+      <div class="result-box">
+        <div class="result-title">Score Result</div>
+        <div class="result-grade">HIGH / MEDIUM / LOW</div>
+        <div class="result-note">(formula = max of “Int. Score”)</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

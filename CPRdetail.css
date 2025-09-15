@@ -1,0 +1,148 @@
+:root{
+  /* smooth gray theme */
+  --bg:#f6f7f9;
+  --panel:#ffffff;
+  --ink:#111827;
+  --muted:#6b7280;
+  --line:#d4d7dd;
+  --line-strong:#c7ccd3;
+  --head:#f3f5f8;
+  --stripe:#f7f8fb;
+  --readonly:#eceff3;
+  --shadow:0 8px 22px rgba(17,24,39,.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font:15px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color:var(--ink);
+  background:var(--bg);
+}
+
+/* Header */
+.page-head{background:#fff; border-bottom:1px solid var(--line)}
+.head-wrap{
+  max-width:1200px; margin:0 auto;
+  padding:18px 20px;
+  display:grid; grid-template-columns:1fr auto; align-items:center;
+}
+.title{margin:0; font-size:38px; font-weight:500}
+.link{color:#3b82f6; text-decoration:none}
+
+.status{color:var(--muted); font-size:14px}
+
+/* Main container */
+.container{max-width:1200px; margin:18px auto 80px; padding:0 20px; display:grid; gap:18px}
+
+/* Card */
+.card{background:var(--panel); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow)}
+.card .body{padding:18px}
+.section-title{margin:16px 18px 0; font-size:16px}
+
+/* Form grid */
+.form-grid{
+  display:grid;
+  grid-template-columns: 220px 320px 1fr;
+  gap:12px 16px; align-items:center;
+}
+.lbl{font-weight:600}
+.hr-row{
+  font-weight:800; color:#111827; align-self:center;
+}
+.inp{
+  width:100%; padding:10px 12px; font:inherit; color:var(--ink);
+  border:1px solid var(--line); border-radius:10px; background:#fff;
+}
+.inp.hint{color:#6b7280; font-style:italic}
+.readonly{background:var(--readonly); color:#4b5563}
+.auto{font-style:italic}
+.side{display:grid; grid-template-columns: auto 160px; gap:8px; align-items:center}
+.side-lbl{font-size:12px; color:var(--muted)}
+.sel{
+  width:100%; padding:10px 12px; font:inherit;
+  border:1px solid var(--line); border-radius:10px; background:#fff;
+}
+
+/* Percent input */
+.percent{position:relative}
+.percent .pct{
+  position:absolute; right:10px; top:50%; transform:translateY(-50%);
+  color:#6b7280; font-weight:700;
+}
+
+/* Table */
+.table-wrap{overflow:auto}
+.grid{
+  width:100%; min-width:900px;
+  border-collapse:separate; border-spacing:0;
+  table-layout:auto;
+  border:1px solid var(--line); border-radius:10px; overflow:hidden;
+}
+.grid thead th{
+  background:#8e939a; color:#fff; font-weight:700;
+  border-bottom:1px solid var(--line-strong);
+}
+.grid th, .grid td{
+  padding:9px 12px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  white-space:normal; word-break:break-word; overflow-wrap:anywhere;
+  background:#fff; vertical-align:middle; text-align:left;
+}
+.grid tbody tr:nth-child(even) td{background:var(--stripe)}
+.grid th:last-child, .grid td:last-child{border-right:0}
+.grid tr:last-child td{border-bottom:0}
+
+/* Column sizes for table */
+.col-date{width:140px}
+.col-time{width:120px}
+.col-fee{width:160px}
+.col-status{width:140px}
+.col-media{width:160px}
+
+/* Note area */
+.note{
+  width:100%; min-height:160px; resize:vertical;
+  border:1px solid var(--line); border-radius:12px;
+  padding:12px; font:inherit; background:#fff;
+}
+
+/* Responsive */
+@media (max-width:1024px){
+  .head-wrap, .container{padding:0 14px}
+  .title{font-size:32px}
+  .form-grid{grid-template-columns: 180px 1fr; gap:10px 12px}
+  .side{grid-template-columns: auto 1fr}
+}
+
+/* Dropdown Action (tanpa JS) */
+.action{position:relative}
+.btn-action{
+  list-style:none; cursor:pointer; user-select:none;
+  padding:10px 14px; border-radius:12px;
+  background:#0f172a; color:#fff; border:1px solid rgba(0,0,0,.5);
+  display:inline-flex; align-items:center; gap:6px;
+}
+.btn-action::-webkit-details-marker{ display:none; }
+.dropdown:not([open]) .menu{ display:none; }
+.menu{
+  position:absolute; right:0; top:110%;
+  min-width:170px; margin:6px 0 0; padding:8px 0;
+  list-style:none;
+  background:#fff; border:1px solid var(--line-soft); border-radius:12px;
+  box-shadow:0 16px 32px rgba(15,23,42,.15); z-index:10;
+}
+.menu li a{
+  display:block; padding:8px 12px; text-decoration:none; color:var(--ink); font-size:14px;
+}
+.menu li a:hover{ background:#eef2ff; color:#1e3a8a; }
+.chev{ font-size:12px }
+
+.head-actions{
+  display:flex; align-items:center; gap:16px;
+}
+.head-actions a{
+  color:#2563eb; text-decoration:none; font-weight:500;
+}

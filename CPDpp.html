@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HGK Memo</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Logo / Brand -->
+    <a class="brand" href="#">
+      <span class="brand-logo">HGK MEMO</span>
+    </a>
+
+    <nav class="nav">
+      <p class="nav-section">Auditor's Dashboard</p>
+      <a href="auditordashboard.html">Auditor's Dashboard</a>
+
+      <p class="nav-section">Pre-Engagement</p>
+      <a href="CPDdashboard.html">Client Prospect Data</a>
+      <a href="CPRdashboard.html">Client Prospect Result</a>
+      <a href="#">PMPJ</a>
+      <a href="#">List On Going Client</a>
+
+      <p class="nav-section">Risk Assessment</p>
+      <a href="#">Materiality</a>
+      <a href="#">Analytical Procedures</a>
+      <a href="#">Inherent Risk</a>
+      <a href="#">Control Risk</a>
+      <a href="#">RoMM</a>
+      <a href="#">Audit Strategy Memorandum</a>
+
+      <p class="nav-section">Risk Respons</p>
+      <a href="#">Lead & Sub Lead</a>
+      <a href="#">Subsequent Event</a>
+      <a href="#">Related Party Transaction</a>
+      <a href="#">Accounting Estimate</a>
+      <a href="#">Management Expert</a>
+      <a href="#">Auditor's Expert</a>
+      <a href="#">List Adjustment</a>
+      <a href="#">TB Audited</a>
+      <a href="#">Summary Unajusted Difference</a>
+
+      <p class="nav-section">Completing &amp; Reporting</p>
+      <a href="#">Quality Control Review</a>
+      <a href="#">IAR Review</a>
+      <a href="#">IAR Final</a>
+
+      <p class="nav-section">System Setting</p>
+      <a href="#">Go To HGK Glossary</a>
+      <a href="#">Go To HGK Portal</a>
+    </nav>
+  </aside>
+
+<!-- Main Content -->
+ <link rel="stylesheet" href="CPDpp.css" />
+ <main class="main">
+    <!-- Header -->
+    <header class="page-head">
+      <h1 class="client-name">Client Name</h1>
+    
+    <div class="back-right">
+    <div><a class="back-btn" href="CPDdetail.html"> Back</a></div>
+      <div class="toolbar-right">
+        <div class="status-note">Status</div>
+
+      <!-- Dropdown Action -->
+        <details class="dropdown">
+          <summary class="btn-action">Action<span class="chev">▾</span></summary>
+          <ul class="menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Validate</a></li>
+            <li><a href="#">Approve</a></li>
+            <li><a href="#">Closed</a></li>
+            <li><a href="#">QC Pass</a></li>
+            <li><a href="#">Revised</a></li>
+            <li><a href="#">Reverse</a></li>
+          </ul>
+        </details>
+        
+    </div>
+    </header>
+
+    <!-- Form Plotting -->
+    <section class="card">
+      <h3 class="section-title">Plotting Personil</h3>
+
+      <div class="form-grid">
+        <label class="label">Assignment position</label>
+        <div class="field">
+          <select class="select">
+            <option value="">-- Choose Assignment Position --</option>
+            <option>Signing Partner</option>
+            <option>Partner</option>
+            <option>EQCR Partner</option>
+            <option>Manager</option>
+            <option>Assistant Manager</option>
+            <option>Team Leader</option>
+            <option>Team Member</option>
+          </select>
+        </div>
+
+        <label class="label">Personnel name</label>
+        <div class="field">
+          <select class="select">
+            <option value="">-- Choose Personnel --</option>
+            <option>Auditor1</option>
+            <option>Auditor2</option>
+            <option>Auditor3</option>
+           </select>
+        </div>
+
+        <label class="label">Start period</label>
+        <div class="field"><input class="input" type="text" placeholder="DD / MM / YYYY"></div>
+
+        <label class="label">End period</label>
+        <div class="field"><input class="input" type="text" placeholder="DD / MM / YYYY"></div>
+      </div>
+
+      <div class="actions-line">
+        <button class="btn primary">Add</button>
+      </div>
+    </section>
+
+    <!-- Rekomendasi EQCR -->
+    <section class="eqcr card">
+      <div class="eqcr-grid">
+        <label class="label">Rekomendasi EQCR</label>
+        <input class="input" type="text" value="Diperlukan / Tidak diperlukan" />
+        <a class="link" href="EQCRdetail.html">See detail</a>
+      </div>
+    </section>
+
+    <!-- Tabel Personil -->
+    <section class="table-block">
+      <div class="table-wrap">
+        <table class="data-table">
+          <colgroup>
+            <col class="col-no">
+            <col class="col-name-wide">
+            <col class="col-med"><col class="col-med">
+            <col class="col-med"><col class="col-med">
+            <col class="col-narrow"><col class="col-narrow">
+            <col class="col-action">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Personnel name</th>
+              <th>Education degree</th>
+              <th>Certification</th>
+              <th>Position</th>
+              <th>Assignment Position</th>
+              <th>Working Hour</th>
+              <th>Cost</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td></td><td></td><td></td><td></td><td></td>
+              <td></td><td></td>
+              <td class="cell-actions">
+                <a href="#" class="link">Edit</a>
+                <a href="#" class="link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td><td></td><td></td><td></td><td></td><td></td>
+              <td></td><td></td>
+              <td class="cell-actions">
+                <a href="#" class="link">Edit</a>
+                <a href="#" class="link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td><td></td><td></td><td></td><td></td><td></td>
+              <td></td><td></td>
+              <td class="cell-actions">
+                <a href="#" class="link">Edit</a>
+                <a href="#" class="link">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Total BTK + Form Alokasi Jam -->
+      <div class="table-footer">
+        <div class="total-btk">
+          <span>Total BTK</span>
+          <input class="input total" type="text" value="" />
+        </div>
+        <a class="btn ghost" href="formalokasijam.html">Form Alokasi Jam</a>
+      </div>
+    </section>
+  </main>
+</body>
+</body>
+</html>

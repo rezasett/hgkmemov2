@@ -1,0 +1,152 @@
+/* Reset dan variabel kecil */
+:root {
+  --blue-700: #1f5d93;
+  --blue-800: #1b4e7a;
+  --blue-900: #163f63;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+/* Layout */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 260px;
+  background: linear-gradient(180deg, var(--blue-800), var(--blue-900));
+  color: var(--white);
+  padding: 20px 16px 24px;
+  overflow-y: auto;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 40px 48px;
+  min-height: 100vh;
+}
+
+/* Brand */
+.brand {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.brand-logo {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 26px;
+  color: #e8f1fb;
+}
+
+/* Nav */
+.nav {
+  display: grid;
+  gap: 6px;
+}
+
+.nav-section {
+  margin: 10px 0 6px;
+  font-weight: 700;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.nav a {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #e6eef8;
+  font-size: 14px;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background: var(--blue-700);
+  outline: none;
+}
+
+/* Hero & sections */
+.hero {
+  display: grid;
+  place-content: start;
+  min-height: 40vh;
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: large (28px, 3vw, 40px);
+  font-weight: 500;
+}
+
+.muted {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.section {
+  margin-top: 48px;
+  scroll-margin-top: 24px; /* agar judul tidak tertutup saat anchor */
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+/* Responsif */
+@media (max-width: 960px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .content {
+    margin-left: 0;
+    padding: 24px 16px 40px;
+  }
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.page-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+}
